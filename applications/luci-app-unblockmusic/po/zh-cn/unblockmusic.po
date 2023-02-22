@@ -1,6 +1,6 @@
 
 msgid "Unblock Netease Music"
-msgstr "解锁网易云灰色歌曲"
+msgstr "网易云解锁"
 
 msgid "Base Setting"
 msgstr "基本设置"

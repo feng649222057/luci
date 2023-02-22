@@ -2,4 +2,4 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
 msgid "TTYD Terminal"
-msgstr "TTYD 终端"
+msgstr "TTYD终端"

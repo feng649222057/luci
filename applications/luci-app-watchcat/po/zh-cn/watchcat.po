@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Pootle 2.0.6\n"
 
 msgid "Forced reboot delay"
-msgstr "强制重启延时"
+msgstr "强制延时重启"
 
 msgid "Host address to ping"
 msgstr "ping主机地址"

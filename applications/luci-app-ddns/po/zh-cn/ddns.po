@@ -249,7 +249,7 @@ msgstr "域名"
 #: applications/luci-app-ddns/luasrc/controller/ddns.lua:52
 #: applications/luci-app-ddns/luasrc/view/ddns/system_status.htm:44
 msgid "Dynamic DNS"
-msgstr "动态 DNS"
+msgstr "动态域名"
 
 #: applications/luci-app-ddns/luasrc/controller/ddns.lua:65
 msgid ""

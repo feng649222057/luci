@@ -141,7 +141,7 @@ msgid "UPnP lease file"
 msgstr "UPnP 租约文件"
 
 msgid "Universal Plug & Play"
-msgstr "通用即插即用（UPnP）"
+msgstr "端口转发"
 
 msgid "Uplink"
 msgstr "上行速率"
