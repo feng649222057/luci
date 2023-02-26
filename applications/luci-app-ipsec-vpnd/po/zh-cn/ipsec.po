@@ -1,5 +1,5 @@
 msgid "IPSec VPN Server"
-msgstr "IPSec VPN 服务器"
+msgstr "IPSecVPN"
 
 msgid "IPSec VPN connectivity using the native built-in VPN Client on iOS or Andriod (IKEv1 with PSK and Xauth)"
 msgstr "使用iOS 或者 Andriod (IKEv1 with PSK and Xauth) 原生内置 IPSec VPN 客户端进行连接"

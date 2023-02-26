@@ -60,7 +60,7 @@ msgid "Detail"
 msgstr "详细信息"
 
 msgid "Diagnostics"
-msgstr "诊断"
+msgstr "网络诊断"
 
 msgid "Disabled"
 msgstr "已禁用"

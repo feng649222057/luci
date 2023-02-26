@@ -57,7 +57,7 @@ msgid "Detail"
 msgstr ""
 
 msgid "Diagnostics"
-msgstr "診斷"
+msgstr "網絡診斷"
 
 msgid "Disabled"
 msgstr "已禁用"
