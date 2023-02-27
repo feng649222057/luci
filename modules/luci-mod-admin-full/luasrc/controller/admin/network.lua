@@ -117,7 +117,7 @@ function index()
 			page = node("admin", "network", "dhcp")
 			page.target = cbi("admin_network/dhcp")
 			page.title  = _("DHCP and DNS")
-			page.order  = 50
+			page.order  = 60
 
 			page = entry({"admin", "network", "dhcplease_status"}, call("lease_status"), nil)
 			page.leaf = true
