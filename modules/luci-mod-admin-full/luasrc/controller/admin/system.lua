@@ -14,19 +14,18 @@ function index()
 	entry({"admin", "system", "admin"}, cbi("admin_system/admin"), _("Administration"), 2)
 
 	if fs.access("/bin/opkg") then
-		entry({"admin", "system", "packages"}, post_on({ exec = "1" }, "action_packages"), _("Software"), 3)
+		entry({"admin", "system", "packages"}, post_on({ exec = "1" }, "action_packages"), _("Software"), 10)
 		entry({"admin", "system", "packages", "ipkg"}, form("admin_system/ipkg"))
 	end
 
-	entry({"admin", "system", "startup"}, form("admin_system/startup"), _("Startup"), 4)
-
+	entry({"admin", "system", "startup"}, form("admin_system/startup"), _("Startup"), 45)
+	--entry({"admin", "system", "crontab"}, form("admin_system/crontab"), _("Scheduled Tasks"), 46)
+	entry({"admin", "system", "crontab"},arcombine(cbi("admin_system/crontab"), cbi("admin_system/crontab-details")),_("Scheduled Tasks"), 46).leaf = true
 	if fs.access("/sbin/block") and fs.access("/etc/config/fstab") then
-		entry({"admin", "system", "fstab"}, cbi("admin_system/fstab"), _("Mount Points"), 5)
+		entry({"admin", "system", "fstab"}, cbi("admin_system/fstab"), _("Mount Points"), 50)
 		entry({"admin", "system", "fstab", "mount"}, cbi("admin_system/fstab/mount"), nil).leaf = true
 		entry({"admin", "system", "fstab", "swap"},  cbi("admin_system/fstab/swap"),  nil).leaf = true
 	end
-
-	entry({"admin", "system", "crontab"}, form("admin_system/crontab"), _("Scheduled Tasks"), 46)
 
 	local nodes, number = nixio.fs.glob("/sys/class/leds/*")
 	if number > 0 then
@@ -45,6 +44,9 @@ function index()
 
 	entry({"admin", "system", "reboot"}, template("admin_system/reboot"), _("Reboot"), 90)
 	entry({"admin", "system", "reboot", "call"}, post("action_reboot"))
+
+	entry({"admin", "system", "poweroff"}, template("admin_system/poweroff"), _("关机"), 92)
+	entry({"admin", "system", "poweroff", "call"}, post("action_poweroff"))
 end
 
 function action_clock_status()
@@ -398,6 +400,10 @@ function action_passwd()
 	end
 
 	luci.template.render("admin_system/passwd", {stat=stat})
+end
+
+function action_poweroff()
+	luci.sys.exec("/sbin/poweroff" )
 end
 
 function action_reboot()
