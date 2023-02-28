@@ -24,11 +24,11 @@ LUCI_DEPENDS:=+rclone-config \
 define Package/$(PKG_NAME)/config
 config PACKAGE_$(PKG_NAME)_INCLUDE_rclone-webui
 	bool "Include rclone-webui"
-	default y
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_rclone-ng
 	bool "Include rclone-ng (another webui)"
-	default y
+	default n
 endef
 
 include ../../luci.mk
