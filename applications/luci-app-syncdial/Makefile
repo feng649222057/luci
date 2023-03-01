@@ -10,9 +10,7 @@ LUCI_TITLE:=Virtual WAN config generator
 LUCI_DEPENDS:=+kmod-macvlan +luci-app-mwan3
 
 PKG_NAME:=luci-app-syncdial
-PKG_VERSION:=2.0
-PKG_RELEASE:=25
 
-include ../../luci.mk
+include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
