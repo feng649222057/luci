@@ -42,7 +42,7 @@ s:option(DummyValue, "_memtotal", translate("Memory")).value =
 )
 
 s:option(DummyValue, "_systime", translate("Local Time")).value =
- os.date("%Y-%m-%d %H:%M:%S")
+ os.date("%c")
 
 s:option(DummyValue, "_uptime", translate("Uptime")).value =
  luci.tools.webadmin.date_format(tonumber(uptime))
