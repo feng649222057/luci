@@ -7,6 +7,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-unblockmusic
+PKG_VERSION:=2.3.5
+PKG_RELEASE:=21
 
 PKG_LICENSE:=Apache-2.0
 PKG_MAINTAINER:=lean <coolsnowwolf@gmail.com>
@@ -36,6 +38,6 @@ define Package/$(PKG_NAME)/conffiles
 /etc/config/unblockmusic
 endef
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature

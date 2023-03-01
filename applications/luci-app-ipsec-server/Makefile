@@ -6,6 +6,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-ipsec-server
+PKG_VERSION:=20211223
+PKG_RELEASE:=2
 
 PKG_MAINTAINER:=Lienol <lawlienol@gmail.com>
 
@@ -17,6 +19,6 @@ define Package/$(PKG_NAME)/conffiles
 /etc/config/luci-app-ipsec-server
 endef
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
