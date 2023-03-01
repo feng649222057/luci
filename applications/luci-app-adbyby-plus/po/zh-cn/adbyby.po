@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Poedit 2.3.1\n"
 
 msgid "ADBYBY Plus +"
-msgstr "广告屏蔽Plus"
+msgstr "广告屏蔽大师 Plus+"
 
 msgid "<strong><font color=\"green\">Adbyby Plus + is Running</font></strong>"
 msgstr "<strong><font color=\"green\">广告屏蔽大师 Plus + 正在运行</font></strong>"
@@ -24,10 +24,10 @@ msgid "Adbyby Plus + can filter all kinds of banners, popups, video ads, and pre
 msgstr "广告屏蔽大师 Plus + 可以全面过滤各种横幅、弹窗、视频广告，同时阻止跟踪、隐私窃取及各种恶意网站<br /><font color=\"red\">Plus + 版本可以和 Adblock Plus Host 结合方式运行，过滤广告不损失带宽</font>"
 
 msgid "Adbyby Plus +"
-msgstr "广告屏蔽Plus"
+msgstr "广告屏蔽大师 Plus+"
 
 msgid "Adbyby Plus + Settings"
-msgstr "广告屏蔽Plus（支持  AdGuardHome /Host / DNSMASQ 规则）"
+msgstr "广告屏蔽大师 Plus+（支持  AdGuardHome /Host / DNSMASQ 规则）"
 
 msgid "Base Setting"
 msgstr "基本设置"

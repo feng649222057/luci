@@ -22,11 +22,11 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)/config
 config PACKAGE_$(PKG_NAME)_INCLUDE_btrfs_progs
 	bool "Include btrfs-progs"
-	default y
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_lsblk
 	bool "Include lsblk"
-	default y
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_mdadm
 	bool "Include mdadm"
@@ -48,6 +48,6 @@ define Package/$(PKG_NAME)/postinst
 rm -fr /tmp/luci-indexcache /tmp/luci-modulecache
 endef
 
-include $(TOPDIR)/feeds/luci/luci.mk
+include ../../luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature

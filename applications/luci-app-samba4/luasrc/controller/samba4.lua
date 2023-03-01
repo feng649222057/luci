@@ -3,11 +3,9 @@
 module("luci.controller.samba4", package.seeall)
 
 function index()
-    if not nixio.fs.access("/etc/config/samba4") then
-        return
-    end
+	if not nixio.fs.access("/etc/config/samba4") then
+		return
+	end
 
-    entry({ "admin", "network", "samba4" }, cbi("samba4"), _("Network Shares")).dependent = true
-
-    --entry({ "admin", "network", "samba4" }, alias("admin", "network", "mwan", "interface"), _("Load Balancing"), 601)
+	entry({"admin", "services", "samba4"}, cbi("samba4"), _("Network Shares")).dependent = true
 end

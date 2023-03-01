@@ -1,5 +1,5 @@
 msgid "IPSec VPN Server"
-msgstr "IPSecVPN"
+msgstr "IPSec VPN 服务器"
 
 msgid "Use a client that supports IPSec Xauth PSK (iOS or Android) to connect to this server."
 msgstr "使用支持 IPSec Xauth PSK（iOS 或 Android）的客户端连接到此服务端。"

@@ -2,7 +2,7 @@ msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
 msgid "Frp Setting"
-msgstr "FRP客户端"
+msgstr "Frp 内网穿透"
 
 msgid "NOT RUNNING"
 msgstr "未运行"

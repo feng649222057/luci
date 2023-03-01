@@ -130,7 +130,7 @@ msgid "There are no active redirects."
 msgstr "没有活动的重定向。"
 
 msgid "UPnP"
-msgstr "动态端口"
+msgstr "UPnP"
 
 msgid ""
 "UPnP allows clients in the local network to automatically configure the "
@@ -141,7 +141,7 @@ msgid "UPnP lease file"
 msgstr "UPnP 租约文件"
 
 msgid "Universal Plug & Play"
-msgstr "端口转发"
+msgstr "通用即插即用（UPnP）"
 
 msgid "Uplink"
 msgstr "上行速率"

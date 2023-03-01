@@ -133,7 +133,7 @@ msgstr "安装新的队列规则后，需要重启路由器！"
 
 #: applications/luci-app-sqm/luasrc/controller/sqm.lua:24
 msgid "SQM QoS"
-msgstr "流量QoS"
+msgstr "SQM QoS"
 
 #: applications/luci-app-sqm/luasrc/model/cbi/sqm.lua:226
 msgid ""
